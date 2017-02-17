@@ -4,7 +4,7 @@
   "description": "",
   "main": "ES5.js",
   "scripts": {
-    "build": "babel ./montey-ES6/run-montey-ES6.js --out-file ./dist/run-montey-ES6.js && babel ./montey-ES6/montey-ES6.js --out-file ./dist/montey-ES6.js",
+    "build": "mkdir -p ./dist && babel ./montey-ES6/run-montey-ES6.js --out-file ./dist/run-montey-ES6.js && babel ./montey-ES6/montey-ES6.js --out-file ./dist/montey-ES6.js",
     "monteyES5": "node ./montey-ES5/run-montey-ES5.js",
     "monteyES6": "node ./dist/run-montey-ES6.js"
   },
