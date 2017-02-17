@@ -1,0 +1,17 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ES5.js",
+  "scripts": {
+    "build": "babel ./montey-ES6/run-montey-ES6.js --out-file ./dist/run-montey-ES6.js && babel ./montey-ES6/montey-ES6.js --out-file ./dist/montey-ES6.js",
+    "monteyES5": "node ./montey-ES5/run-montey-ES5.js",
+    "monteyES6": "node ./dist/run-montey-ES6.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-es2015": "^6.22.0"
+  }
+}
